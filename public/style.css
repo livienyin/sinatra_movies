@@ -1,0 +1,29 @@
+#outer-container {
+}
+
+#inner-container {
+}
+
+#main {
+}
+
+dt:after {
+    content: ":";
+}
+
+dt {
+    float: left;
+    text-align: right;
+}
+
+dd, dt {
+    line-height: 2em;
+}
+
+dd {
+    font-weight: 400;
+}
+
+dd ol, dd ul {
+    margin: 0 auto;
+}

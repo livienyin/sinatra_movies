@@ -1,0 +1,15 @@
+<!--conceptually the same as results for `related search`-->
+
+<ol>
+  <% @results.each do |result| %>
+  <li>
+    <% unless @query.nil? %>
+    <a href="/movies?id=<%= result["imdbID"]%>&amp;q=<%= URI.escape(@query) %>">
+      <% end %>
+      <%= result["Title"] %>
+    </a>
+    (<%= result["Year"] %>)
+  </li>
+  <% end %>
+</ol>
+
