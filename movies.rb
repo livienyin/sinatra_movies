@@ -8,8 +8,6 @@ require 'json'
 require 'uri'
 require 'date'
 
-
-
 configure :development do
   register Sinatra::Reloader 
 end
