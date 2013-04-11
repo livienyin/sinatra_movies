@@ -1,3 +1,5 @@
+
+
 <h2>
   <%= @result["Title"] %>
   (<%= @result["Year"] %>)
@@ -67,6 +69,7 @@ title="Movie poster for <%= @result["Title"] %>">
     </ul>
   </dd>
 </dl>
+
 <% unless @results.empty? %>
   <h3>Related movies</h3>
   <%= erb :results %>
